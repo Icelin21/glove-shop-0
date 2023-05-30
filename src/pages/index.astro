@@ -7,7 +7,20 @@ import About from '../components/landing/About.astro'
 ---
 
 <Layout>
-	<Main/>
-
+	<div class="bg-[url('/portada.png')] bg-no-repeat bg-cover md:h-screen">
+		<Main/>
+		<section class="flex">
+			<div class="w-6/12 self-center">
+				<div class="m-auto w-3/5">
+					<h4 class="sm:text-3xl">30% de descuento</h4>
+					<h1 class="sm:text-6xl">Guantes azalea</h1>
+					<button class="mt-4 rounded-full bg-blue-700 text-xs px-4 sm:px-8 sm:text-base sm:py-2">Descubre más</button>
+				</div>
+			</div>
+			<div class="w-6/12">
+				<img src="guantes_portada.png" alt="Guantes Portada" class="w-4/5 m-auto">
+			</div>
+		</section>
+	</div>
 	<About/>
 </Layout>
